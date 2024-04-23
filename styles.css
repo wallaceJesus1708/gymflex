@@ -100,13 +100,13 @@ nav {
 .hero-content {
     position: relative;
     width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 1800px; /* Limita a largura máxima do conteúdo */
+    max-width: 1500px; /* Limita a largura máxima do conteúdo */
 }
 
 .hero-image {
     display: block; /* Para ocupar toda a largura */
     width: 100%; /* Ajusta a largura da imagem ao container */
-    max-height: 800px; /* Limita a altura máxima */
+    max-height: 700px; /* Limita a altura máxima */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
     background-color: black; /* Fundo para áreas não preenchidas pela imagem */
 }
