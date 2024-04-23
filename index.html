@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Academia Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Para ícones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Academia Fitness</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#app">Aplicativo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="imagens/1.png" class="hero-image" alt="Imagem da academia" />
+            <a href="#sobre" class="cta">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma academia dedicada a ajudar nossos membros a alcançar seus objetivos de saúde e fitness. Oferecemos
+            uma ampla variedade de aulas, programas de treinamento personalizados e treinadores qualificados.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Treinamento Personalizado</h3>
+                <p>Treinamento adaptado às suas necessidades e objetivos.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-running"></i>
+                <h3>Aulas de Ginástica</h3>
+                <p>Várias aulas para manter você em forma e motivado.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-apple-alt"></i>
+                <h3>Nutrição</h3>
+                <p>Orientação nutricional para apoiar seus objetivos de fitness.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="app">
+        <h2>FlexGym: Moldando um Campeão</h2>
+        <div class="app-content">
+            <div class="assistente-cintia">
+                <img src="imagens/cintia.png" alt="Assistente Cintia" />
+            </div>
+            <p>Nosso novo aplicativo FlexGym ajuda você a acompanhar seus progressos, participar de desafios gamificados
+                e receber dicas exclusivas. Junte-se à jornada e torne-se um campeão!</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para saber mais sobre nossos programas e ofertas.</p>
+        <form>
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Academia Fitness. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Selecione os elementos do menu e do hambúrguer
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Adiciona um evento de clique para alternar a visibilidade do menu
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active'); // Alterna a classe para mostrar/ocultar o menu
+            burger.classList.toggle('toggle'); // Anima o ícone do hambúrguer
+        });
+    </script>
+</body>
+
+</html>

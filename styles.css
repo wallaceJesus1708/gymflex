@@ -1,0 +1,304 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho e da navegação */
+header {
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0c14b;
+}
+
+/* Estilo do menu 'hambúrguer' para dispositivos móveis */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+    opacity: 0;
+}
+
+.burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilo do conteúdo 'hero' */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Para ocupar toda a altura da janela */
+    background-color: black; /* Cor de fundo para preencher a área restante */
+}
+
+.hero-content {
+    position: relative;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1800px; /* Limita a largura máxima do conteúdo */
+}
+
+.hero-image {
+    display: block; /* Para ocupar toda a largura */
+    width: 100%; /* Ajusta a largura da imagem ao container */
+    max-height: 800px; /* Limita a altura máxima */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    background-color: black; /* Fundo para áreas não preenchidas pela imagem */
+}
+
+#hero .cta {
+    position: absolute; /* Permite manipular a posição do botão */
+    bottom: 10%; /* Define o quanto para cima o botão deve ficar */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Mantém o botão centralizado no eixo X */
+    z-index: 1; /* Certifica-se de que o botão está no topo */
+    padding: 0.5rem 1.5rem;
+    background-color: #CCFE06; /* Cor do botão */
+    color: #333;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#hero .cta:hover {
+    background-color: #B3DB05; /* Cor de hover */
+}
+
+/* Estilo das seções */
+section {
+    padding: 2rem;
+}
+
+#sobre {
+    text-align: center;
+}
+
+#servicos {
+    text-align: center;
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.servico {
+    text-align: center;
+    flex: 1 1 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.servico i {
+    font-size: 2rem;
+}
+
+/* Estilo da seção do aplicativo */
+#app {
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.app-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.app-content p {
+    flex: 1;
+    text-align: left;
+    padding-right: 2rem; /* Para dar espaço para a imagem */
+}
+
+.assistente-cintia {
+    flex: 0 0 200px;
+}
+
+.assistente-cintia img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo da seção de contato */
+#contato {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f0c14b;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #333;
+        height: calc(100vh - 60px);
+        width: 200px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(100%); /* Empurra o menu para fora da tela */
+        transition: transform 0.3s; /* Transição suave para a abertura */
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0); /* Mostra o menu ao ativar */
+    }
+
+    .burger {
+        display: flex; /* O hambúrguer deve ser visível em telas menores */
+    }
+
+    #hero {
+        padding: 1rem; /* Menos espaço para telas menores */
+    }
+
+    .hero-image {
+        max-height: 300px; /* Menor altura para telas pequenas */
+    }
+
+    #hero .cta {
+        bottom: 15%; /* Mantém o botão CTA mais baixo, não se movendo para cima */
+        padding: 0.5rem 1rem; /* Ajustar o tamanho do botão */
+        transform: translateX(-50%); /* Para garantir que fique centralizado */
+    }
+
+    .servicos-container {
+        flex-direction: column;
+    }
+
+    #app .app-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #app .app-content p {
+        padding-right: 0;
+    }
+
+    .assistente-cintia {
+        flex: 0 0 auto;
+    }
+}
