@@ -94,39 +94,39 @@ nav {
     align-items: center;
     text-align: center;
     height: 100vh; /* Para ocupar toda a altura da janela */
-    background-color: black; /* Cor de fundo para preencher a área restante */
+    background-color: black;
 }
 
 .hero-content {
     position: relative;
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 1500px; /* Limita a largura máxima do conteúdo */
+    width: 100%;
+    max-width: 1500px; 
 }
 
 .hero-image {
-    display: block; /* Para ocupar toda a largura */
-    width: 100%; /* Ajusta a largura da imagem ao container */
-    max-height: 700px; /* Limita a altura máxima */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    background-color: black; /* Fundo para áreas não preenchidas pela imagem */
+    display: block;
+    width: 100%; 
+    max-height: 700px; 
+    object-fit: cover;
+    background-color: black; 
 }
 
 #hero .cta {
-    position: absolute; /* Permite manipular a posição do botão */
-    bottom: 10%; /* Define o quanto para cima o botão deve ficar */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Mantém o botão centralizado no eixo X */
-    z-index: 1; /* Certifica-se de que o botão está no topo */
+    position: absolute;
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1;
     padding: 0.5rem 1.5rem;
-    background-color: #CCFE06; /* Cor do botão */
-    color: #333;
+    background-color: #CCFE06; 
+    color: #333; 
     border-radius: 5px;
     text-transform: uppercase;
     transition: background-color 0.3s;
 }
 
 #hero .cta:hover {
-    background-color: #B3DB05; /* Cor de hover */
+    background-color: #B3DB05; 
 }
 
 /* Estilo das seções */
@@ -182,7 +182,7 @@ section {
 .app-content p {
     flex: 1;
     text-align: left;
-    padding-right: 2rem; /* Para dar espaço para a imagem */
+    padding-right: 2rem; 
 }
 
 .assistente-cintia {
@@ -192,6 +192,52 @@ section {
 .assistente-cintia img {
     max-width: 100%;
     height: auto;
+}
+
+/* Estilo da seção de produtos */
+#produtos {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para garantir uma boa distribuição */
+}
+
+.produto {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #333;
+}
+
+.produto a {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.produto a:hover {
+    background-color: #0056b3;
 }
 
 /* Estilo da seção de contato */
@@ -243,7 +289,7 @@ footer {
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
+social-icons a:hover {
     color: #f0c14b;
 }
 
@@ -259,34 +305,21 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        transform: translateX(100%); /* Empurra o menu para fora da tela */
-        transition: transform 0.3s; /* Transição suave para a abertura */
+        transform: translateX(100%); 
+        transition: transform 0.3s;
     }
 
     .nav-links.nav-active {
-        transform: translateX(0); /* Mostra o menu ao ativar */
+        transform: translateX(0);
     }
 
     .burger {
-        display: flex; /* O hambúrguer deve ser visível em telas menores */
-    }
-
-    #hero {
-        padding: 1rem; /* Menos espaço para telas menores */
-    }
-
-    .hero-image {
-        max-height: 300px; /* Menor altura para telas pequenas */
-    }
-
-    #hero .cta {
-        bottom: 15%; /* Mantém o botão CTA mais baixo, não se movendo para cima */
-        padding: 0.5rem 1rem; /* Ajustar o tamanho do botão */
-        transform: translateX(-50%); /* Para garantir que fique centralizado */
+        display: flex;
     }
 
     .servicos-container {
         flex-direction: column;
+        justify-content: center;
     }
 
     #app .app-content {
@@ -300,5 +333,10 @@ footer {
 
     .assistente-cintia {
         flex: 0 0 auto;
+    }
+
+    .produtos-container {
+        flex-direction: column; 
+        align-items: center; 
     }
 }
