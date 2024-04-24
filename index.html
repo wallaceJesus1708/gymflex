@@ -19,6 +19,7 @@
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li> <!-- Adicionado para a seção de produtos -->
                 <li><a href="#app">Aplicativo</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -64,6 +65,39 @@
         </div>
     </section>
 
+    <section id="produtos"> <!-- Seção de produtos -->
+        <h2>Produtos</h2>
+        <div class="produtos-container">
+            <div class="produto">
+                <h3>PulseFit Flex</h3>
+                <p>
+                    - Acesso ao Site, gestão de usuário e criação de atividades<br>
+                    - Valor Mensal: R$ 90,00<br>
+                    - Valor Semestral: R$ 500,00<br>
+                    - Valor Anual: R$ 1.200,00
+                </p>
+            </div>
+            <div class="produto">
+                <h3>PulseFit Pro</h3>
+                <p>
+                    - Acesso ao Site, gestão de usuário e criação de atividades<br>
+                    - Valor Mensal: R$ 120,00<br>
+                    - Valor Semestral: R$ 700,00<br>
+                    - Valor Anual: R$ 1.500,00
+                </p>
+            </div>
+            <div class="produto">
+                <h3>PulseFit Evolution</h3>
+                <p>
+                    - Acesso ao Site, gestão de usuário e criação de atividades, App no celular<br>
+                    - Valor Mensal: R$ 150,00<br>
+                    - Valor Semestral: R$ 900,00<br>
+                    - Valor Anual: R$ 1.800,00
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="app">
         <h2>FlexGym: Moldando um Campeão</h2>
         <div class="app-content">
@@ -102,8 +136,8 @@
 
         // Adiciona um evento de clique para alternar a visibilidade do menu
         burger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active'); // Alterna a classe para mostrar/ocultar o menu
-            burger.classList.toggle('toggle'); // Anima o ícone do hambúrguer
+            navLinks.classList.toggle('nav-active'); 
+            burger.classList.toggle('toggle'); 
         });
     </script>
 </body>
